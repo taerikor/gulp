@@ -49,7 +49,7 @@ const styles = () => {
         .pipe(sass().on('error', sass.logError))
         .pipe(
             autoPreFixer({
-              browsers: ["last 2 versions"]
+                cascade: false
             })
           )
         .pipe(csso())
